@@ -3,7 +3,7 @@ int main()
 {
 	double x=100,y=x/2;
 	int n;
-	for (n=2;n=10;n++)
+	for (n=2;n<=10;n++)
 	{
 		x=x+2*y;
 		y=y/2;
