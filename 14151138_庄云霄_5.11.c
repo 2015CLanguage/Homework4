@@ -1,23 +1,14 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-	int n,i,s;
-	for (n=1;n<=1000;n++)
-	{
-		s=0;
-		for(i=1;i<n;i++)
-			if(n%i==0)
-			{
-				s=s+i;
-			}
-			if(s==n)
-			{
-				printf("%d its factors are ",n);
-				for(i=1;i<n;i++)
-					if (n%i==0)
-						printf("%d, ",i);
-					  printf("\n");
-			}
+  double s=100,h=s/2;
+  int n;
+  for(n=2;n<=10;n++)
+  {
+  s+=2*h;
+  h=h/2;
 	}
+	printf("第十次落地时共经过%f米\n",s);
+	printf("第十次反弹的高度为%f米\n",h);
 	return 0;
 }
