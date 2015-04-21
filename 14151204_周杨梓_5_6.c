@@ -1,13 +1,16 @@
 #include<stdio.h>
 int main()
-{int m,n,s;
+{int m,n,s,i;
+ printf("请输入正整数n:\n");
+ scanf("%d",&n);
  s=0;
- n=1;
+ i=1;
  m=1;
- while(n<6)
- {m=m*n;
+ while(i<n+1)
+ {
+  m=m*i;
   s=s+m;
-  n=n+1;
+  i++;
  }
  printf("s=%d\n",s);
  return 0;
