@@ -2,7 +2,7 @@
 int main()
 {
 	int i,m,n,t;
-	printf("计算i!+(i-1)!+…+2!+1!\n请输入i的值(太大会溢出= =)\n");
+	printf("计算i!+(i-1)!+…+2!+1!\n请输入i的值\n");
 	scanf("%d",&i);
 	n=1,t=0;
 	while(i>=1)
