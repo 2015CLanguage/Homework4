@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main()
+{
+	float l=100,h=100;
+	int n=1;
+	while(n<=10)
+	{
+		h=h/2;//第n次反弹的高度
+		l=l+h*2;//总路程
+		n=n+1;
+	}
+	printf("第十次落地时共经过%f米\n",l);
+	printf("第十次落地时反弹%f米\n",h);
+}
