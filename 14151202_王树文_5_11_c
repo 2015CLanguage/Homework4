@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	double a,x;
+	n=10;
+	a=100;
+	x=0;
+	for(i=1;i<=n;i++)
+	{
+		x=x+a*1.5;
+		a=0.5*a;
+	}
+	printf("第十次高度为:%f\n",a);
+	printf("总路程为:%f\n",x);
+	return 0;
+}
