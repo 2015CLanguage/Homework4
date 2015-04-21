@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-	int a=0,b=1,n,c;
-	printf("请输入要算的阶乘和c的值：");
-	scanf("%d,",&c);
-	for(n=1;n<=c;n++)
-	{
-		b=b*n;
-		a=a+b;
-	}
-	printf("c的阶乘和为：%d\n",a);
-	return 0;
+	int s=0,a=1,m,n;
+	printf("请输入正整数n:");
+	scanf("%d,",&n);
+for(m=1;m<=n;m++)
+{
+	a=a*m;
+	s=s+a;
+}
+printf("原式的和为：%d\n",s);
+return 0;
 }
