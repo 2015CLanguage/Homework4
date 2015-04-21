@@ -2,7 +2,7 @@
 void main()
 {
 	float l=100,h=100;
-	int n=1;
+	int n=2;
 	while(n<=10)
 	{
 		h=h/2;//第n次反弹的高度
