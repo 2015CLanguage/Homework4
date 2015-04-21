@@ -9,10 +9,10 @@ void main()
 			if((n%i)==0)             //找出所有因子并求和
 				sum+=i;
 		if(sum==n)                    //如果是完数则输出所有因子
-		{	printf("%d its factors are ",n);
-		    for (i=1;i<n;i+=1)
+		{	printf("%d its factors are 1",n);
+		    for (i=2;i<n;i+=1)
 				if((n%i)==0)
-					printf("%d ",i);
+					printf(",%d ",i);
 			printf("\n");
 		}
 		
