@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+	int a,s,n,m,temp;
+	printf("请输入两个正整数n,m:");
+	scanf("%d,%d,",&n,&m);
+	if (n<m)
+	{
+		temp=n;
+		n=m;
+		m=temp;
+	}
+	a=n*m;
+	while(s!=0)
+	{
+		s=m%n;
+		n=m;
+		m=s;
+	}
+	printf("两个正整数的最小公倍数是:%d\n",n);
+	printf("两个正整数的最大公约数是:%d\n",a/n);
+	return 0;
+}
