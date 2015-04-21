@@ -1,23 +1,25 @@
 #include <stdio.h>
-int main()
-{
-	int a,s,n,m,temp;
-	printf("请输入两个正整数n,m:");
-	scanf("%d,%d,",&n,&m);
-	if (n<m)
-	{
-		temp=n;
-		n=m;
-		m=temp;
-	}
-	a=n*m;
-	while(s!=0)
-	{
-		s=m%n;
-		n=m;
-		m=s;
-	}
-	printf("两个正整数的最小公倍数是:%d\n",n);
-	printf("两个正整数的最大公约数是:%d\n",a/n);
-	return 0;
-}
+  int main()
+  {
+  int m,n;
+  int m_cup,n_cup,res; 
+  printf("请输入两个正整数:\n");
+  scanf("%d %d", &m, &n);
+  if (m>0&&n>0)
+  {
+  m_cup=m;
+  n_cup=n;
+  res=m_cup%n_cup;
+  while (res != 0)
+  {
+  m_cup=n_cup;
+  n_cup=res;
+  res=m_cup%n_cup;
+  }
+  printf("最大公约数为: %d\n",n_cup);
+  printf("最小公倍数为: %d\n",m*n/n_cup);
+  }
+  else printf("Error!\n");
+  return 0;
+  }
+  
