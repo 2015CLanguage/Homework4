@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-	int m,n,a,b,m1,n1,i,c;
+	int m,n,a,b=1,m1,n1,i,c;
 	printf("请输入两个整数：");
 	if(m<n){
 		c=m;
@@ -20,10 +20,11 @@ int main(){
     for(i=2;i<=n1;i++){
     	if(m1%i==0&&n1%i==0){
     		m1=m1/i;
-    		n1=n1/1;
+    		n1=n1/i;
+    		b=b*i;
 		}
 	}
-	b=m1*n1;
+	b=b*m1*n1;
 	printf("最小公倍数是%d,最大公约数为%d",b,a);
 	 
 	return 0;
