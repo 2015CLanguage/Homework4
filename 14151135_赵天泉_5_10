@@ -1,0 +1,21 @@
+# include<stdio.h>
+int main()
+{
+	float m,s,n,t;
+int i,j;
+	j=20;
+	i=1;
+	s=0.00,m=1.00,n=2.00;
+	while (i<=j)
+	{
+		s=s+n/m;
+		t=m+n;
+		m=n;
+		n=t;
+		i++;
+
+
+	}
+	printf("和为：%.2f\n",s);
+	return 0;
+}
