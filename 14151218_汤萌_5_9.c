@@ -13,7 +13,7 @@ int main()
 		if (a==i)
 		{
 			printf("%d its factors are 1", i);
-			for (m=2; m<i+1; m++)
+			for (m=2; m<i; m++)
 			{
 				if (i%m==0)
 				{
@@ -23,5 +23,5 @@ int main()
 			printf("\n");
 		}
 	}
-return 0;
+	return 0;
 }
