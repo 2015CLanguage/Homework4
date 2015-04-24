@@ -1,0 +1,25 @@
+Enter file contents here
+# include<stdio.h>
+int main()
+{
+	int m, n, a, b, r;
+	printf("请输入两个正整数m,n：");
+	scanf("%d，%d,", &m, &n);
+	if (n<m)
+	{
+		b = n;
+		n = m;
+		m = b;
+	}
+
+	a = m*n;
+	while (m != 0)
+	{
+		r = n%m;
+		n = m;
+		m = r;
+	}
+	printf("最大公约数：%d\n", n);
+	printf("最小公倍数：%d\n", a / n);
+	return 0;
+}
