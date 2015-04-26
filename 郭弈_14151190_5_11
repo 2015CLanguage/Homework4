@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	float h,i,m,n,t;
+	h=100;
+	i=1;
+	t=0;
+	while(i<=10)
+	{   
+	  m=h;
+		h=h/2;
+		n=m+h;
+		t=t+n; 
+		i=i+1;
+	}
+	printf("第10次反弹的高度为：%0.3f米\n",h);
+	printf("经过的长度为：%0.3f米\n",t);
+	return h;
+} 
