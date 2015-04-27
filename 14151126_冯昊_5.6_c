@@ -1,0 +1,18 @@
+
+#include<stdio.h>
+void main()
+{
+	int i,j,k,a;
+	printf("请输入i的值\n");
+	scanf("%d",&i);
+	k=0;
+	while(i>=1)
+	{
+		j=1;
+		a=1;
+	 for(;a<=i;j=j*a,a++);
+	 i--;
+	 k=k+j;
+	}
+	printf("和为：%d\n",k);
+}
