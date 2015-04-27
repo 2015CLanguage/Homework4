@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+    float h=100,l=0,n;
+    for(n=1;n<=10;n++)
+    {
+        l=l+h;
+        h=h/2;
+    }
+    printf("经过 %f 米\n",l);
+    printf("第十次反弹 %f 米高\n",h);
+ }
