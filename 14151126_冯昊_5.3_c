@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+	int a,b,i,j,k;
+	printf("请输入两个正整数，用逗号隔开：");
+	scanf("%d,%d",&a,&b);
+    if(a>b)
+	 {
+		k=b;
+		b=a;
+		a=k;    //这样使a永远表示表示两个数中较小的数，表示两个数中较大的数。
+	 }
+	for(i=a;i>=1;i--)
+		if(a%i==0&&b%i==0)break;
+			printf("最大公约数为：%d\n",i);
+	j=(a/i)*b;
+	printf("最小公倍数为：%d\n",j);
+}
